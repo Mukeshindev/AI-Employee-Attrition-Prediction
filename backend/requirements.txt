@@ -5,11 +5,11 @@ numpy
 scikit-learn
 joblib
 shap
-catboost
 lightgbm
 xgboost
+catboost
 imbalanced-learn
 sqlalchemy
 psycopg2-binary
 python-dotenv
-pydantic
+pyarrow

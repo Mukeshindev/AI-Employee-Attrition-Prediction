@@ -31,15 +31,13 @@ if not MODEL_PATH.exists():
     )
 
 
-if not EXPLAINER_PATH.exists():
-    raise FileNotFoundError(
-        f"SHAP file not found: {EXPLAINER_PATH}"
-    )
-
-
 model = joblib.load(MODEL_PATH)
 
-explainer = joblib.load(EXPLAINER_PATH)
+
+if EXPLAINER_PATH.exists():
+    explainer = joblib.load(EXPLAINER_PATH)
+else:
+    explainer = None
 
 
 preprocessor = model.named_steps["preprocessor"]
@@ -48,7 +46,6 @@ classifier = model.named_steps["classifier"]
 
 
 feature_names = preprocessor.get_feature_names_out()
-
 
 feature_names = [
     feature.replace("num__", "")
