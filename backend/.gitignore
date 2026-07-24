@@ -1,0 +1,45 @@
+# Python cache
+
+__pycache__/
+
+*.py[cod]
+
+*$py.class
+
+
+# Virtual environment
+
+.venv/
+
+venv/
+
+
+# Environment variables
+
+.env
+
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+
+# Logs
+
+*.log
+
+
+# OS files
+
+.DS_Store
+
+
+# Testing
+
+.pytest_cache/
+
+
+# IDE
+
+.vscode/
+.idea/

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+}
+
+
+body {
+
+  font-family: "Roboto", Arial, sans-serif;
+
+  background-color: #f5f7fb;
+
+}
+
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+
+button {
+
+  font-family: inherit;
+
+}
