@@ -26,19 +26,14 @@ app = FastAPI(
 )
 Base.metadata.create_all(bind=engine)
 app.add_middleware(
-
     CORSMiddleware,
-
     allow_origins=[
-        "http://localhost:5173"
+        "http://localhost:5173",
+        "https://ai-employee-attrition-prediction.vercel.app",
     ],
-
     allow_credentials=True,
-
     allow_methods=["*"],
-
-    allow_headers=["*"]
-
+    allow_headers=["*"],
 )
 @app.get("/")
 def home():
